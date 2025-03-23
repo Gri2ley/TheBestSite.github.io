@@ -17,8 +17,8 @@ btn1.onclick = () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide()
     } else {
-        tg.MainButton.setText("Вы выбрали Москва-Нижний Новгород!")
-        item = "Москва-Нижний Новгород"
+        tg.MainButton.setText("Вы выбрали Москва - Санкт-Петербург!")
+        item = "Москва - Санкт-Петербург"
         tg.MainButton.show()
     }
 }
@@ -27,8 +27,8 @@ btn2.onclick = () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide()
     } else {
-        tg.MainButton.setText("Вы выбрали Самара-Казань!")
-        item = "Самара-Казань"
+        tg.MainButton.setText("Вы выбрали Ростов-на-Дону - Краснодар!")
+        item = "Ростов-на-Дону - Краснодар"
         tg.MainButton.show()
     }
 }
@@ -37,21 +37,13 @@ btn3.onclick = () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide()
     } else {
-        tg.MainButton.setText("Вы выбрали Ижевск-Брянск!")
-        item = "Ижевск-Брянск"
+        tg.MainButton.setText("Вы выбрали Волгоград - Волгодонск!")
+        item = "Волгоград - Волгодонск"
         tg.MainButton.show()
     }
 }
 
-btn4.onclick = () => {
-    if (tg.MainButton.isVisible) {
-        tg.MainButton.hide()
-    } else {
-        tg.MainButton.setText("Вы выбрали Владивосток-Сочи!")
-        item = "Владивосток-Сочи"
-        tg.MainButton.show()
-    }
-}
+
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
     tg.sendData(item);
